@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Парсер HH</title>
+        <link rel="icon" type="image/x-icon" href="/static/assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/static/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="#page-top">Beluncho</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                       <li class="nav-item"><a class="nav-link" href="/">Главная страница</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/form">Поиск вакансий</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contacts">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-primary bg-gradient text-white">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder">Основные умения востребованные работодателями</h1>
+                <p class="lead">Сайт поможет вам обратить внимание на требования работодателей
+                    (на основе вакансиий HH)</p>
+                <a class="btn btn-lg btn-light" href="#services">начни поиск</a>
+            </div>
+        </header>
+
+        <section class="bg-light" id="services">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Форма для поиска</h2>
+                            <form action="/result/" method="post">
+                            <div class="form-group">
+                                <label for="vacancy">Текст поиска:</label>
+                                <input type="text" name="vacancy" placeholder="Строка поиска" class="form-control" id="vacancy">
+                                <label for="wh">Где искать:</label>
+                                <select name="where" class="form-control" id="wh">
+                                    <option value="all">Везде</option>
+                                    <option value="company">В названии компании</option>
+                                    <option selected value="name">В названии вакансии</option>
+                                </select>
+                                <label for="p">Количество анализируемых страниц</label>
+                                <input type="number" name="pages" value="3" class="form-control" id="p">
+                                <input type="submit" value="Искать вакансию" class="btn btn-primary" >
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>
