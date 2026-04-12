@@ -1,0 +1,4 @@
+flask==2.3.3
+sqlalchemy==2.0.21
+requests==2.31.0
+pycbrf==0.2.1
