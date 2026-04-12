@@ -46,7 +46,8 @@ hh_flask/
 ├── area.pkl # Pickle-файл с регионами
 ├── .gitignore
 ├── LICENSE
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 
 ## 📊 Модели базы данных
